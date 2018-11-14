@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char YXArsenalVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <YXArsenal/PublicHeader.h>
 
 #import "NSString+YXAdd.h"
+#import "UIColor+YXAdd.h"
+#import "YXVerificationCodeButton.h"

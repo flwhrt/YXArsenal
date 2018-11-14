@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F6BB630218AED8800254100 /* UIColor+YXAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6BB62E218AED8800254100 /* UIColor+YXAdd.h */; };
+		7F6BB630218AED8800254100 /* UIColor+YXAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6BB62E218AED8800254100 /* UIColor+YXAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F6BB631218AED8800254100 /* UIColor+YXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6BB62F218AED8800254100 /* UIColor+YXAdd.m */; };
 		7FBDCB1D218764F3008A708F /* YXArsenal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBDCB13218764F3008A708F /* YXArsenal.framework */; };
 		7FBDCB22218764F3008A708F /* YXArsenalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDCB21218764F3008A708F /* YXArsenalTests.m */; };
 		7FBDCB24218764F3008A708F /* YXArsenal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBDCB16218764F3008A708F /* YXArsenal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FBDCB2F21876679008A708F /* NSString+YXAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBDCB2D21876679008A708F /* NSString+YXAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FBDCB3021876679008A708F /* NSString+YXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDCB2E21876679008A708F /* NSString+YXAdd.m */; };
+		7FFCE4E2219AFF72009E3751 /* YXVerificationCodeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFCE4E0219AFF72009E3751 /* YXVerificationCodeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FFCE4E3219AFF72009E3751 /* YXVerificationCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCE4E1219AFF72009E3751 /* YXVerificationCodeButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		7FBDCB23218764F3008A708F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBDCB2D21876679008A708F /* NSString+YXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YXAdd.h"; sourceTree = "<group>"; };
 		7FBDCB2E21876679008A708F /* NSString+YXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YXAdd.m"; sourceTree = "<group>"; };
+		7FFCE4E0219AFF72009E3751 /* YXVerificationCodeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVerificationCodeButton.h; sourceTree = "<group>"; };
+		7FFCE4E1219AFF72009E3751 /* YXVerificationCodeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVerificationCodeButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				7FBDCB17218764F3008A708F /* Info.plist */,
 				7F6BB62E218AED8800254100 /* UIColor+YXAdd.h */,
 				7F6BB62F218AED8800254100 /* UIColor+YXAdd.m */,
+				7FFCE4E0219AFF72009E3751 /* YXVerificationCodeButton.h */,
+				7FFCE4E1219AFF72009E3751 /* YXVerificationCodeButton.m */,
 			);
 			path = YXArsenal;
 			sourceTree = "<group>";
@@ -108,6 +114,7 @@
 				7FBDCB24218764F3008A708F /* YXArsenal.h in Headers */,
 				7FBDCB2F21876679008A708F /* NSString+YXAdd.h in Headers */,
 				7F6BB630218AED8800254100 /* UIColor+YXAdd.h in Headers */,
+				7FFCE4E2219AFF72009E3751 /* YXVerificationCodeButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFCE4E3219AFF72009E3751 /* YXVerificationCodeButton.m in Sources */,
 				7F6BB631218AED8800254100 /* UIColor+YXAdd.m in Sources */,
 				7FBDCB3021876679008A708F /* NSString+YXAdd.m in Sources */,
 			);
