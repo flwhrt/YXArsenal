@@ -16,6 +16,7 @@
 		7FBDCB3021876679008A708F /* NSString+YXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDCB2E21876679008A708F /* NSString+YXAdd.m */; };
 		7FFCE4E2219AFF72009E3751 /* YXVerificationCodeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFCE4E0219AFF72009E3751 /* YXVerificationCodeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FFCE4E3219AFF72009E3751 /* YXVerificationCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCE4E1219AFF72009E3751 /* YXVerificationCodeButton.m */; };
+		7FFCE55E21A1549B009E3751 /* NSString+YXAddTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCE55D21A1549B009E3751 /* NSString+YXAddTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		7FBDCB2E21876679008A708F /* NSString+YXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YXAdd.m"; sourceTree = "<group>"; };
 		7FFCE4E0219AFF72009E3751 /* YXVerificationCodeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVerificationCodeButton.h; sourceTree = "<group>"; };
 		7FFCE4E1219AFF72009E3751 /* YXVerificationCodeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVerificationCodeButton.m; sourceTree = "<group>"; };
+		7FFCE55D21A1549B009E3751 /* NSString+YXAddTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YXAddTests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				7FBDCB21218764F3008A708F /* YXArsenalTests.m */,
 				7FBDCB23218764F3008A708F /* Info.plist */,
+				7FFCE55D21A1549B009E3751 /* NSString+YXAddTests.m */,
 			);
 			path = YXArsenalTests;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFCE55E21A1549B009E3751 /* NSString+YXAddTests.m in Sources */,
 				7FBDCB22218764F3008A708F /* YXArsenalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
