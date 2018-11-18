@@ -10,9 +10,12 @@
 
 @interface NSString (YXAdd)
 
-- (BOOL)isEmpty;
++ (BOOL)isEmpty:(NSString *)aString;
++ (BOOL)isBlank:(NSString *)aString;
+
 - (BOOL)isNotEmpty;
-- (BOOL)isBlank;
 - (BOOL)isNotBlank;
+
+- (BOOL)match:(nonnull NSString *)regex;
 
 @end

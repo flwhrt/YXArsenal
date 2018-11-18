@@ -10,25 +10,31 @@
 
 @implementation NSString (YXAdd)
 
-- (BOOL)isEmpty
++ (BOOL)isEmpty:(NSString *)aString
 {
-    return self == nil || self.length == 0;
+    return ![aString isNotEmpty];
+}
+
++ (BOOL)isBlank:(NSString *)aString
+{
+    return ![aString isNotBlank];
 }
 
 - (BOOL)isNotEmpty
 {
-    return ![self isEmpty];
-}
-
-- (BOOL)isBlank
-{
-
-    return [[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEmpty];
+    return self.length > 0;
 }
 
 - (BOOL)isNotBlank
 {
-    return ![self isBlank];
+    NSString *aString = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return [aString isNotEmpty];
+}
+
+- (BOOL)match:(NSString *)regex
+{
+    NSRange r = [self rangeOfString:[NSString stringWithFormat:@"^%@$", regex] options:NSRegularExpressionSearch];
+    return r.location != NSNotFound;
 }
 
 @end
