@@ -20,6 +20,11 @@
     return ![aString isNotBlank];
 }
 
++ (NSString *)emptyStringIfNil:(NSString *)aString
+{
+    return [aString isNotEmpty] ? aString : @"";
+}
+
 - (BOOL)isNotEmpty
 {
     return self.length > 0;
@@ -35,6 +40,21 @@
 {
     NSRange r = [self rangeOfString:[NSString stringWithFormat:@"^%@$", regex] options:NSRegularExpressionSearch];
     return r.location != NSNotFound;
+}
+
+- (BOOL)confirmToIDNumber
+{
+    int factors[17] = {7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2};
+    NSString *remainders = @"10x98765432";
+    int sum = 0;
+    for (int i = 0; i < 17; i++) {
+        NSString *str = [self substringWithRange:NSMakeRange(i, 1)];
+        sum = sum + str.intValue * factors[i];
+    }
+    int result = sum % 11;
+    
+    NSRange r = [remainders rangeOfString:[self substringFromIndex:17] options:NSCaseInsensitiveSearch];
+    return result == r.location;
 }
 
 @end

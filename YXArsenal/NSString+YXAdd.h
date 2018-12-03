@@ -13,9 +13,14 @@
 + (BOOL)isEmpty:(NSString *)aString;
 + (BOOL)isBlank:(NSString *)aString;
 
++ (NSString *)emptyStringIfNil:(NSString *)aString;
+
 - (BOOL)isNotEmpty;
 - (BOOL)isNotBlank;
 
 - (BOOL)match:(nonnull NSString *)regex;
+
+
+- (BOOL)confirmToIDNumber;
 
 @end
