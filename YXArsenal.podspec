@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "YXArsenal"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "tool for ios app development."
   s.homepage     = "https://github.com/flwhrt/YXArsenal"
   s.license      = "MIT"
