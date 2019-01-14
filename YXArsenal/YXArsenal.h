@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char YXArsenalVersionString[];
 #import "UIColor+YXAdd.h"
 #import "YXVerificationCodeButton.h"
 #import "UIView+YXAdd.h"
+#import "UIImage+YXAdd.h"
