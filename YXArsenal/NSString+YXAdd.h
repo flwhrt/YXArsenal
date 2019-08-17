@@ -15,6 +15,8 @@
 
 + (NSString *)emptyStringIfNil:(NSString *)aString;
 
++ (NSString *)stringWithDateFormart:(NSString *)format;
+
 - (BOOL)isNotEmpty;
 - (BOOL)isNotBlank;
 
@@ -22,5 +24,6 @@
 
 
 - (BOOL)confirmToIDNumber;
+
 
 @end

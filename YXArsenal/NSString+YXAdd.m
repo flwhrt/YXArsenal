@@ -57,4 +57,10 @@
     return result == r.location;
 }
 
++ (NSString *)stringWithDateFormart:(NSString *)format {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = format;
+    return [formatter stringFromDate:[NSDate date]];
+}
+
 @end
