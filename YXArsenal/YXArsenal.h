@@ -23,3 +23,4 @@ FOUNDATION_EXPORT const unsigned char YXArsenalVersionString[];
 #import "UIImage+YXAdd.h"
 #import "YXPage.h"
 #import "UIButton+YXAdd.h"
+#import "UIScreen+YXAdd.h"

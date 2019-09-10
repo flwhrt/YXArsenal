@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181BA5602319690B00A77D90 /* UIScreen+YXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BA55E2319690B00A77D90 /* UIScreen+YXAdd.m */; };
+		181BA5612319690B00A77D90 /* UIScreen+YXAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 181BA55F2319690B00A77D90 /* UIScreen+YXAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1858964C23042B510004B5B0 /* YXPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1858964A23042B500004B5B0 /* YXPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1858964D23042B510004B5B0 /* YXPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858964B23042B510004B5B0 /* YXPage.m */; };
 		1858965923052FE60004B5B0 /* UIButton+YXAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1858965723052FE60004B5B0 /* UIButton+YXAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,10 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181BA55E2319690B00A77D90 /* UIScreen+YXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+YXAdd.m"; sourceTree = "<group>"; };
+		181BA55F2319690B00A77D90 /* UIScreen+YXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+YXAdd.h"; sourceTree = "<group>"; };
 		1858964A23042B500004B5B0 /* YXPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXPage.h; sourceTree = "<group>"; };
 		1858964B23042B510004B5B0 /* YXPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXPage.m; sourceTree = "<group>"; };
 		1858965723052FE60004B5B0 /* UIButton+YXAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+YXAdd.h"; sourceTree = "<group>"; };
 		1858965823052FE60004B5B0 /* UIButton+YXAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YXAdd.m"; sourceTree = "<group>"; };
+		18CC7BCF2327A3CF0015DCE5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		7F6BB62E218AED8800254100 /* UIColor+YXAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YXAdd.h"; sourceTree = "<group>"; };
 		7F6BB62F218AED8800254100 /* UIColor+YXAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YXAdd.m"; sourceTree = "<group>"; };
 		7F8356FB21EC232000B29117 /* UIImage+YXAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YXAdd.h"; sourceTree = "<group>"; };
@@ -80,12 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18CC7BCE2327A3CE0015DCE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18CC7BCF2327A3CF0015DCE5 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7FBDCB09218764F3008A708F = {
 			isa = PBXGroup;
 			children = (
 				7FBDCB15218764F3008A708F /* YXArsenal */,
 				7FBDCB20218764F3008A708F /* YXArsenalTests */,
 				7FBDCB14218764F3008A708F /* Products */,
+				18CC7BCE2327A3CE0015DCE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +131,8 @@
 				1858964B23042B510004B5B0 /* YXPage.m */,
 				1858965723052FE60004B5B0 /* UIButton+YXAdd.h */,
 				1858965823052FE60004B5B0 /* UIButton+YXAdd.m */,
+				181BA55F2319690B00A77D90 /* UIScreen+YXAdd.h */,
+				181BA55E2319690B00A77D90 /* UIScreen+YXAdd.m */,
 			);
 			path = YXArsenal;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 				7F8356FD21EC232000B29117 /* UIImage+YXAdd.h in Headers */,
 				7FFCE4E2219AFF72009E3751 /* YXVerificationCodeButton.h in Headers */,
 				1858965923052FE60004B5B0 /* UIButton+YXAdd.h in Headers */,
+				181BA5612319690B00A77D90 /* UIScreen+YXAdd.h in Headers */,
 				1858964C23042B510004B5B0 /* YXPage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +268,7 @@
 				7F8356FE21EC232000B29117 /* UIImage+YXAdd.m in Sources */,
 				7F6BB631218AED8800254100 /* UIColor+YXAdd.m in Sources */,
 				7FBDCB3021876679008A708F /* NSString+YXAdd.m in Sources */,
+				181BA5602319690B00A77D90 /* UIScreen+YXAdd.m in Sources */,
 				7FDCD27C21BA49110017F32E /* UIView+YXAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

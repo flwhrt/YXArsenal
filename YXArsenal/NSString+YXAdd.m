@@ -58,9 +58,17 @@
 }
 
 + (NSString *)stringWithDateFormart:(NSString *)format {
+    return [self stringWithDate:[NSDate date] formart:format];
+}
+
++ (NSString *)stringWithDate:(NSDate *)date formart:(NSString *)format {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = format;
-    return [formatter stringFromDate:[NSDate date]];
+    return [formatter stringFromDate:date];
 }
+
+//+ (NSString *)stringWithFloat:(float)number {
+//    
+//}
 
 @end

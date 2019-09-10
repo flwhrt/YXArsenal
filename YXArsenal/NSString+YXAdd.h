@@ -16,6 +16,9 @@
 + (NSString *)emptyStringIfNil:(NSString *)aString;
 
 + (NSString *)stringWithDateFormart:(NSString *)format;
++ (NSString *)stringWithDate:(NSDate *)date formart:(NSString *)format;
+
++ (NSString *)stringWithFloat:(float)number;
 
 - (BOOL)isNotEmpty;
 - (BOOL)isNotBlank;
