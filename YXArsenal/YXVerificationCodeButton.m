@@ -53,7 +53,7 @@
     __weak typeof(self) weakSelf = self;
     dispatch_source_set_event_handler(_timer, ^{
         
-        if(time <= 0){ //倒计时结束，关闭
+        if(weakSelf.time <= 0){ //倒计时结束，关闭
             
             dispatch_source_cancel(_timer);
             dispatch_async(dispatch_get_main_queue(), ^{
